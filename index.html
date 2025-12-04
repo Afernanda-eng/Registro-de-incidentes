@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Incidentes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Registro de Incidentes</h1>
+
+<form id="incidentForm">
+<input type="text" id="user" placeholder="Nome do usuário" required>
+<input type="text" id="problem" placeholder="Tipo de problema" required>
+
+<select id="urgency" required>
+<option value="">Urgência</option>
+<option value="Baixa">Baixa</option>
+<option value="Média">Média</option>
+<option value="Alta">Alta</option>
+</select>
+
+<button type="submit">Registrar incidente</button>
+</form>
+
+<h2>Lista de Incidentes</h2>
+<ul id="incidentList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
